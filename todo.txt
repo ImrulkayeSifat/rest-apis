@@ -5,6 +5,6 @@
 [+] log out
 [+] add new product
 [+] update a product
-[] get all product
-[] get single product
-[] delete a product
+[+] get all product
+[+] get single product
+[+] delete a product

@@ -19,6 +19,8 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 app.use('/api',routes);
 app.use(errorHandler);
+
+app.use('/uploads',express.static('uploads'));
 app.listen(APP_PORT,()=>{
     `Listening on port ${APP_PORT}.`
 })
