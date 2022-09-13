@@ -3,7 +3,7 @@
 [+] who am i
 [+] refresh token
 [+] log out
-[] add new product
+[+] add new product
 [] update a product
 [] get all product
 [] get single product
