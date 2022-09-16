@@ -7,7 +7,7 @@ const errorHandler = (err,req,res,next) => {
 
   let data = {
     message: 'Internal server error',
-    ...DEBUG_MODE(DEBUG_MODE === 'true' && { originalError: err.message })
+    // ...DEBUG_MODE(DEBUG_MODE === 'true' && { originalError: err.message })
   }
 
   if(err instanceof ValidationError) {

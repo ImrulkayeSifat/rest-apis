@@ -1,13 +1,16 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import { APP_PORT,DB_URL } from './config';
+import { APP_PORT,DB_PASSWORD } from './config';
 import errorHandler from './middlewares/errorHandler';
 import routes from './routes/index';
 import path from 'path';
 
 const app = express();
 
-mongoose.connect(DB_URL,{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect(`mongodb+srv://imrul:keylogger@cluster0.32u719s.mongodb.net/?retryWrites=true&w=majority`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
 const db = mongoose.connection;
 
 db.on('error',console.error.bind(console,'connection error:'));
