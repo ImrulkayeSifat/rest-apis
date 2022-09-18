@@ -8,3 +8,5 @@
 [+] get all product
 [+] get single product
 [+] delete a product
+
+https://medium.com/zenofai/how-to-build-a-node-js-and-mongodb-application-with-docker-containers-15e535baabf5
